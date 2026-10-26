@@ -1,26 +1,16 @@
-# Daily Mail homepage clone (static archive)
+# Daily Mail-style website clone
 
-This is a standalone, self-contained reconstruction of the Daily Mail UK homepage as captured in the supplied ZIP on 26 October 2026. It includes the original page markup, styles, and locally archived images. It is **not** an official Daily Mail website.
+An unofficial static archive of a Daily Mail homepage snapshot, including a fictional dog painting story titled **“Man's Best Algorithm”**.
 
-## Run it
-
-From this folder:
-
+## Run
 ```bash
-python -m http.server 8080
+python3 -m http.server 8080
 ```
+Open http://localhost:8080 after downloading the repository.
 
-Visit `http://localhost:8080`. You can also double-click `index.html` to view the visual snapshot, although search works best when served over HTTP.
+## Links
+Homepage navigation, archived news headlines, buttons and search lead to the original `dailymail.com` site or its search results. The custom dog story is a local page: `dog-article.html`.
 
-## Included
+**Note:** The purported $8.7 million dog painting sale is fictional satire. The site is not affiliated with Daily Mail, Sotheby's, or any auction company. It does not accept logins or payments.
 
-- `index.html`: original homepage layout and headlines, cleaned of analytics scripts.
-- `images/`: bundled archive images, icons and logos.
-- `styles/`: bundled original page CSS, plus small local adjustments.
-- `pages/`: linked headline previews and category browsing pages, generated from the supplied homepage data.
-- `story-data.json`: editable list of extracted headlines, images, snippets and categories.
-- `clone.js`: local headline search. Press `/` or `Ctrl+K` (on Mac, `Cmd+K`).
-
-## Limitations
-
-This is a fixed editorial snapshot, not a live feed. The source ZIP did not include full article pages, so article links open local **previews** showing the information present in the saved homepage. Original logins, subscriptions, video advertising, analytics and comments are not functional. Certain outbound links point to third-party websites. Do not use this clone to impersonate the news publisher or collect credentials.
+The homepage styles and images come from a user-supplied archive. The custom dog's original sketch is sourced from a user-provided image.
