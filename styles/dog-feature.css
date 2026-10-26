@@ -1,0 +1,24 @@
+/* Feature layout for the fictional dog painting article. */
+.dm-dog-lead{font-family:Arial,Helvetica,sans-serif;display:block;width:100%;box-sizing:border-box;padding:0 0 20px;margin:4px 0 24px;border-bottom:4px solid #e7eef3}
+.dm-dog-lead *{box-sizing:border-box}
+.dm-dog-kicker{display:flex;align-items:center;gap:11px;margin:0 0 7px}
+.dm-dog-kicker-tag{font-size:13px;font-weight:800;color:white;background:#b71929;padding:4px 8px}
+.dm-dog-topline{font-weight:800;color:#757575;letter-spacing:.07em;font-size:12px}
+.dm-dog-lead h2{font-size:31px;font-weight:800;line-height:1.12;letter-spacing:-.035em;margin:4px 0 15px;padding:0;color:#0256a9}
+.dm-dog-lead h2 a{font-size:inherit;line-height:inherit;font-weight:inherit;text-decoration:none;color:#0759b7}
+.dm-dog-lead h2 a:hover{text-decoration:underline}
+.dm-dog-image-link{display:grid;grid-template-columns:minmax(0,2.35fr) minmax(0,1fr);gap:5px;width:100%;height:410px;overflow:hidden;text-decoration:none!important;color:inherit}
+.dm-dog-image-main,.dm-dog-image-side{position:relative;display:block;overflow:hidden;background:#222;min-width:0}
+.dm-dog-image-link img{width:100%;height:100%;object-fit:cover;display:block}
+.dm-dog-image-main img{object-position:center center}
+.dm-dog-image-side img{object-position:center center}
+.dm-dog-image-main:after{content:'';position:absolute;left:0;right:0;bottom:0;height:65px;background:linear-gradient(transparent,rgba(0,0,0,.65));pointer-events:none}
+.dm-dog-image-label{font-family:Arial,Helvetica,sans-serif;position:absolute;bottom:13px;left:15px;font-size:17px;line-height:1.1;font-weight:800;color:white;z-index:1;text-shadow:0 1px 1px #000}
+.dm-dog-image-side span{font-family:Arial,Helvetica,sans-serif;position:absolute;bottom:10px;left:9px;right:9px;font-size:12px;font-weight:800;color:#fff;text-align:center;background:rgba(0,0,0,.75);padding:7px 3px}
+.dm-dog-deck{font-family:Arial,Helvetica,sans-serif;color:#252a30;font-size:16px;line-height:1.42;margin:11px 0 8px;font-weight:400}
+.dm-dog-foot{font-size:12px;color:#78838e;display:flex;align-items:center;gap:8px}
+.dm-dog-foot a{color:#0755a5;font-weight:bold;text-decoration:none}
+.dm-dog-foot a:hover{text-decoration:underline}
+.dm-dog-dot{color:#9da5b1}
+@media(max-width:700px){.dm-dog-lead h2{font-size:25px}.dm-dog-image-link{height:330px}.dm-dog-deck{font-size:15px}}
+@media(max-width:480px){.dm-dog-lead h2{font-size:23px}.dm-dog-image-link{grid-template-columns:1fr;height:260px}.dm-dog-image-side{display:none}.dm-dog-image-label{font-size:14px}.dm-dog-kicker-tag{font-size:11px}}
